@@ -1,0 +1,21 @@
+{
+    "name": "luis/alphabet-soup",
+    "description": "Test for COR",
+    "authors": [
+        {
+            "name": "Luis",
+            "email": "rivasl.works@gmail.com"
+        }
+    ],
+
+    "require": {
+        "kint-php/kint": "^2.2",
+        "components/jquery": "^3.2"
+    },
+
+    "autoload":{
+        "psr-4": {
+            "Soups\\" : "lib"
+        }
+    }
+}
