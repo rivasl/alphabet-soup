@@ -6,17 +6,36 @@
 
     Kint::$enabled_mode = true; // Disable kint
     // $resultado = $_REQUEST['words'];
-    $frase1 =   '3 3
-                MIA
+
+    $soup1 = '3 3
+                OIE
                 IIX
                 EXE';
-    $frase = '1 10 EIOIEIOEIO';
-    // TODO: MOSTRAR MENSAJE A USUARIO EN INGLES Y ESPANOL DE COMO DEBE SER LA ENTRADA DE DATOS PARA EL PROGRAMA
-    d($frase);
-    echo "<br>";
+    
+    $soup2 = '1 10 EIOIEIOEIO';
 
-    $soup = new Soup($frase);
-    $soup->setSearch("OIE");
-    $resultado = $soup->checkSoup();
-    d($resultado);
+    $soup3 = '5 5
+                EAEAE
+                AIIIA
+                EIOIE
+                AIIIA
+                EAEAE';
+
+    // TODO: MOSTRAR MENSAJE A USUARIO EN INGLES Y ESPANOL DE 
+    // TODO: COMO DEBE SER LA ENTRADA DE DATOS PARA EL PROGRAMA
+    echo "<br>";
+    $soup1 = new Soup($soup1);
+    $soup1->setSearch("OIE");
+    $result1 = $soup1->checkSoup();
+    d($result1);
+
+    $soup2 = new Soup($soup2);
+    $soup2->setSearch("OIE");
+    $result2 = $soup2->checkSoup();
+    d($result2);
+
+    $soup3 = new Soup($soup3);
+    $soup3->setSearch("OIE");
+    $result3 = $soup3->checkSoup();
+    d($result3);
 ?>

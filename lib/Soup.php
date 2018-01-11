@@ -35,7 +35,6 @@ class Soup
         $this->r = array_shift($this->lines); 
         $this->c = array_shift($this->lines);
         $this->ocurrence = 0;
-        d($this->lines); //TODO: QUITAR DE ACA
     }
     
     /**
@@ -47,7 +46,7 @@ class Soup
         for ($i=0; $i < $this->r; $i++) {
             array_push($this->matrix, str_split(array_shift($this->lines)));
         }
-        d($this->matrix); //TODO: QUITAR DE ACA
+        // d($this->matrix); //TODO: QUITAR DE ACA
     }
     
     /**
